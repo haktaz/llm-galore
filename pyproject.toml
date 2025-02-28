@@ -1,14 +1,13 @@
 [project]
-name = "my-project"
+name = "python-app"
 version = "0.1.0"
-description = "First time trying a poetry init"
+description = ""
 authors = [
     {name = "htazi",email = "htazi@nuglif.com"}
 ]
+package = [{include = "python_app", from = "src"},] 
 readme = "README.md"
-requires-python = ">=3.9,<4.0"
-packages = [{include = "my_package", from = "src"}]
-
+requires-python = ">=3.10,<4.0"
 dependencies = [
     "langchain (>=0.3.19,<0.4.0)",
     "openai (>=1.65.1,<2.0.0)",
