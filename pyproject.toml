@@ -1,0 +1,21 @@
+[project]
+name = "my-project"
+version = "0.1.0"
+description = "First time trying a poetry init"
+authors = [
+    {name = "htazi",email = "htazi@nuglif.com"}
+]
+readme = "README.md"
+requires-python = ">=3.9,<4.0"
+packages = [{include = "my_package", from = "src"}]
+
+dependencies = [
+    "langchain (>=0.3.19,<0.4.0)",
+    "openai (>=1.65.1,<2.0.0)",
+    "fastapi (>=0.115.9,<0.116.0)"
+]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
